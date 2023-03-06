@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bgHeader {
+    background-image: url("./bg-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+}
+
+#logo {
+    display: block;
+    margin: 5px auto;
+    max-width: 45%;
+    overflow: hidden;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    position: relative;
+    margin-top: 2%;
+    justify-content: center;
+    gap: 15px;
+} 
+
+.menu a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #1A3E4B;
+    font-size: 2rem;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.btn {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+    margin-left: 5%;
+}
+
+.buttons {
+    background-color: #3793b7;
+    width: 17rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    margin-left: 2%;
+    padding: 0.5%;
+    cursor: pointer;
+}
+
+.generalBody {
+    background-color: #DCF3F8;
+}
+
+.stats {
+    background-color: #46A4C8;
+    font-family: 'DM Sans', sans-serif;
+    height: 50px;
+    color: white;
+    padding: 1% 0 0 2%;
+    text-align: center;
+}
+
+#allCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4%;
+    margin: 1% 8% 3% 8%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#locationsCard, #vehiclesCard {
+    background-color: #46A4C8;
+    padding: 1%;
+    margin-top: 4%;
+    border-radius: 20px;    
+    text-align: center;
+    filter: drop-shadow(6px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+#locationsImg, #vehiclesImg {
+    width: 15vw;
+    height: 11vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#locationsName, #vehiclesName {
+    font-size: small;
+    color: #fff;
+}
+
+.footer {
+    background-color: #46A4C8;
+    height: 3rem;
+}
+
+.footer-credits {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    color: #fff;
+}
+
+.footer-links {
+    font-weight: bold;
+}
+
+.footer-links:visited {
+    color: #fff;
+}
+
+@media screen and (max-width: 950px) {
+    .menu a {
+        font-size: 2rem;
+    }
+
+    .stats {
+        padding: 0.7rem;
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        font-size: 2rem;
+        width: 20rem;
+        height: 3rem;
+    }
+
+    #allCards {
+        column-gap: 4%;
+        margin: 3% 8% 3% 8%;
+    }
+
+    #locationsCard, #vehiclesCard {
+        width: 35%;
+        height: 75%;
+        padding-bottom: 7%;
+        padding-top: 5%;
+    }
+
+    #locationsImg, #vehiclesImg {
+        width: 25vw;
+        height: 20vw;
+        object-fit: cover;
+    }
+
+    #locationsName, #vehiclesName {
+        font-size: 140%;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .stats {
+        padding: 0.7rem;
+        font-size: 1.3rem;
+    }
+
+    .buttons {
+        font-size: 2rem;
+        width: 15rem;
+        height: 3.5rem;
+    }
+
+    #allCards {
+        column-gap: 4%;
+        margin: 3% 8% 3% 8%;
+    }
+
+    #locationsCard, #vehiclesCard {
+        width: 35%;
+        height: 75%;
+        padding-bottom: 7%;
+        padding-top: 5%;
+    }
+
+    #locationsImg, #vehiclesImg {
+        width: 25vw;
+        height: 20vw;
+        object-fit: cover;
+    }
+
+    #locationsName, #vehiclesName {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #locationsCard, #vehiclesCard {
+        width: 40%;
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .menu {
+        margin-right: 2rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 0 2% 1% 1%;
+    }
+
+    .buttons {
+        font-size: 1rem;
+        width: 9rem;
+    }
+
+    .stats {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    #locationsCard, #vehiclesCard {
+        width: 48%;
+        height: 65%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    #locationsImg, #vehiclesImg {
+        width: 30vw;
+        height: 30vw;
+        object-fit: cover;
+    }
+
+    #locationsName, #vehiclesName {
+        font-size: 75%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        font-size: 1rem;
+        width: 13rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .buttons {
+        font-size: 1.1rem;
+        width: 9rem;
+        height: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        margin-left: 1rem;
+    }
+
+    .menu a {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 1%;
+        margin: 0 1% 1% 1%;
+    }
+
+    .buttons {
+        font-size: 1rem;
+        width: 9rem;
+    }
+
+    .stats {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    #allCards {
+        column-gap: 4%;
+        margin: 3% 2% 3% 2%;
+    }
+
+    #locationsCard, #vehiclesCard {
+        width: 10rem;
+        height: 12rem;
+        padding-bottom: 7%;
+        padding-top: 5%;
+    }
+
+    #locationsImg, #vehiclesImg {
+        width: 30vw;
+        height: 30vw;
+        object-fit: cover;
+    }
+
+    #locationsName, #vehiclesName {
+        font-size: 0.7rem; 
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        width: 7rem;
+        height: 1.7rem;
+        font-size: 0.9rem;
+    }
+
+    .stats {
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    #locationsCard, #vehiclesCard {
+        width: 7rem;
+        height: 10rem;
+        padding-bottom: 7%;
+        padding-top: 5%;
+    }
+
+    #locationsImg, #vehiclesImg {
+        width: 30vw;
+        height: 30vw;
+        object-fit: cover;
+    }
+
+    #locationsName, #vehiclesName {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #46A4C8 0%, #DCF3F8 100%);
+}
+
+#logo {
+    display: block;
+    margin: 5px auto;
+    max-width: 45%;
+    overflow: hidden;
+}
+
+#ghibli-gif {
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+}
+
+#homeText {
+    font-family: 'DM Sans', sans-serif;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    line-height: 200%;
+    text-indent: 3%;
+    font-size: large;
+}
+
+.btn-enter { 
+    font-family: 'DM Sans', sans-serif;
+    padding: 1%;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    background-color:#51b7df;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin-left: 57%;
+}
+
+.link-enter{
+    text-decoration: none;
+    color:#fff;
+  }
+
+.btn-enter:hover {
+    background-color: #46A4C8;
+  }
+
+.btn-enter:active {
+    background-color: #1A3E4B;
+  }
+
+
+@media screen and (max-width: 700px) {
+    .btn-enter { 
+        width: 85%;
+        font-size: 20px;
+        margin-left: 15%;
+    }
+
+    #homeText {
+        padding-left: 13%;
+        padding-right: 15%;
+    }
+}

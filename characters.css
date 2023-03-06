@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bgHeader {
+    background-image: url("./bg-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+} 
+
+#logo {
+    display: block;
+    margin: 5px auto;
+    max-width: 45%;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    margin-top: 2%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1A3E4B;
+    font-size: 2rem;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.search-area {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+}
+
+#characters-search {
+    background-color: #3793b7; 
+    width: 15rem;
+    height: 1.7rem;
+    font-size: 100%;
+    border-radius: 40px;
+    border: none;
+    
+    padding: 0.5%;
+    color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: white;
+    
+    text-align: center;
+}
+
+#clean {
+    background-color: #3793b7;
+    width: 5rem;
+    height: 1.7rem;
+    font-size: 100%;
+    border-radius: 40px;
+    border: none;
+    padding: 0.5%;
+    margin-left: 1rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalBody {
+    background-color: #DCF3F8;
+}
+
+.stats {
+    background-color: #46A4C8;
+    font-family: 'DM Sans', sans-serif;
+    height: 50px;
+    color: white;
+    padding: 1% 0 0 2%;
+    text-align: center;
+}
+
+.btn-films {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    font-family: 'DM Sans', sans-serif;
+}
+
+.btn-film {
+    width: 8rem;
+    height: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #46A4C8;
+    border: none;
+    color: #FFF;
+    
+    border-radius: 10px;
+}
+
+#charactersCards {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+    column-gap: 3%;
+    margin: 3% 8% 3% 8%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#container {
+    position: relative;
+    width: 255px;
+    height: 370px;
+    margin-bottom: 5%;
+    filter: drop-shadow(6px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+#card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+#container:hover #card {
+    transform: rotateY(180deg);
+}
+
+#frontCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #46A4C8;
+    color: white;
+    text-align: center;
+    border-radius: 3%;
+    padding: 8% 0 15% 0;
+    font-weight: 400;
+    border-radius: 30px;
+}
+
+#backCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #46A4C8;
+    color: white;
+    transform: rotateY(180deg);
+    padding-top: 20%;
+    padding-left: 15%;
+    padding-right: 10%;
+    line-height: 170%;
+    font-size: larger;
+    border-radius: 30px;
+}
+
+#characterImg {
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+#charactersName {
+    padding-bottom: 8%;
+}
+
+.footer {
+    background-color: #46A4C8;
+    height: 3rem;
+}
+
+.footer-credits {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    color: #fff;
+}
+
+.footer-links {
+    font-weight: bold;
+}
+
+.footer-links:visited {
+    color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+    .menu a {
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menu {
+        margin-right: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .stats {
+        padding-top: 1rem;
+    }
+
+    #card {
+        margin-left: 0.3rem;
+        margin-right: 3rem; 
+    }
+}   
+
+
+@media screen and (max-width: 500px) {
+    .menu {
+        margin-right: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .stats {
+        padding-top: 1rem;
+    }
+
+    #card {
+        margin-left: 0.3rem;
+        margin-right: 3rem; 
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        margin-right: 1rem;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+    }
+
+    #card {
+        margin-left: 0.3rem;
+        margin-right: 3rem; 
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .menu a {
+        font-size: 0.65rem;
+    }
+
+    #characters-search {
+        width: 9rem;
+        font-size: 80%;
+    }
+
+    #clean {
+        width: 4rem;
+        font-size: 80%;
+    }
+
+    .stats {
+        padding-top: 0.5rem;
+        font-size: 90%;
+    }
+
+    .btn-films {
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    
+    }
+    
+    .btn-film {
+        width: 6rem;
+        height: 6rem;
+        padding: 1rem;
+    }
+
+    #card {
+        margin-left: 0.3rem;
+        margin-right: 3rem; 
+    }
+}

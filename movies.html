@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>Movies</title>
+    <link rel="stylesheet" href="movies.css" />
+    <link rel="icon" type="image/png" href="./totoro-icon.png"/>
+</head>
+<body class="generalBody">
+  <header class="bgHeader">
+    <img src="./ghibli-logo.png" alt="logo studio ghibli" id="logo">
+
+    <style>a {text-decoration: none;}</style>
+
+    <nav class="menu" id="moviesMenu">
+      <a href="./index.html">Home</a> 
+      <a href="./characters.html">Characters</a>
+      <a href="./locations-and-vehicles.html">Locations and Vehicles</a>   
+    </nav>
+
+    <div class="movie-filters">
+    <input type="search" id="movies-search" placeholder="Search">
+
+    <select class="filters" id="order">
+      <option value="" disabled="" selected="" hidden >Order</option>
+      <option value="az" id="az">A-Z</option>
+      <option value="za" id="za">Z-A</option>
+    </select>
+    <select class="filters" id="release">
+    <option value="" disabled="" selected="" hidden>Release</option>
+      <option value="oldest" id="oldest">Oldest</option>
+      <option value="recent" id="recent">Recent</option>
+    </select> 
+    <select class="filters" id="director">
+      <option value="" disabled="" selected="" hidden>Director</option>
+      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+      <option value="Isao Takahata">Isao Takahata</option>
+      <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+      <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+      <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+      <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+    </select>
+
+    <button id="clean">Clean</button>
+  </div>
+  </header>
+
+  <p class="stats">Welcome to the movies page!</p>
+  <main>
+
+    <div id="infos"></div>
+    <div id="movieCards"></div>
+
+  </main>
+
+  <footer class="footer"> 
+    <p class="footer-credits">Developed by <a href="https://github.com/AlineGuiseline" class="footer-links">Aline Guiseline</a> and <a href="https://github.com/bruna-abreu" class="footer-links">Bruna Abreu</a> ❤</p>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html> 
