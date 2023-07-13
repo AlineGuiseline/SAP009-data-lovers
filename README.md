@@ -2,7 +2,7 @@
 
 Segundo projeto criado junto ao bootcamp da Laboratória, visando criar uma plataforma que exibisse um conjunto de dados, de acordo com a temática escolhida.
 
-🔗 [Clique aqui para acessar](https://alineguiseline.github.io/SAP009-data-lovers/)
+🔗 [Clique aqui para acessar](https://alineguiseline.github.io/data-lovers-ghibli/)
 
 ## Índice
 
